@@ -1,0 +1,160 @@
+/*
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+*/
+
+* {box-sizing: border-box; margin: 0;}
+.widget {
+	position: left;
+	padding: 20px 30 px;
+	background:white;
+	font-family:'Roboto', sans-serif;
+}
+
+.widget-title {
+	position: left;
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	color: #222;
+	font-size: 20px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	border-left: 5px solid #b99d61;
+}
+
+.widget-list {
+	position: left;
+	padding: 0px;
+	list-style:none;
+}
+
+.widget-list a:before {
+	position: left;
+	content: "\2014";
+	margin-right: 14px;
+}
+
+.widget-list a {
+	position: left;
+	text-decoration: none;
+	outline: none;
+	display: block;
+	padding: 6px 0;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: #444;
+	transition: .3s linear;
+}
+
+.widget-list a:hover {color: #b99d61;}
+
+#randChislo {
+	z-index: 5;
+}
+
+#cur {
+	font-size: 100px;
+	z-index: 10;
+}
+
+#batton {
+	width: 110px;
+	height: 75px;
+	cursor: pointer;
+	border-radius: 10px;
+	border-style: outset;
+    background: #302498;
+    padding: 10px;
+	z-index: 15;
+}
+
+#batton:hover {
+	background: #150F4B;
+}
+
+#batton:active {
+	background: #070518;
+}
+
+#minm {
+	text-align: center;
+	width: 100px;
+	border-radius: 8px;
+	border-style: solid;
+	border: 2px solid #302498;
+}
+
+#maxm {
+	text-align: center;
+	width: 100px;
+	border-radius: 8px;
+	border-style: solid;
+	border: 2px solid #302498;	
+}
